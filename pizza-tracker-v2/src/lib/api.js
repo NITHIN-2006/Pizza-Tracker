@@ -1,11 +1,12 @@
 import axios from 'axios'
 
-const api = axios.create({
-  baseURL: 'http://localhost:3001',
+const API = axios.create({
+  baseURL: import.meta.env.VITE_API_URL,
   headers: {
     'Content-Type': 'application/json',
   },
-})
+});
+
 
 export const getOptions = async () => {
   const { data } = await api.get('/api/options')
