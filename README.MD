@@ -49,9 +49,6 @@ pizza-tracker
 ---
 
 ## Requirements
-
-Make sure the following are installed:
-
 * Go 1.21+
 * Node.js 18+
 * npm
@@ -71,17 +68,6 @@ Install dependencies:
 
 ```
 go mod tidy
-```
-
-Create a `.env` file:
-
-```
-DB_HOST=nozomi.proxy.rlwy.net
-DB_PORT=55939
-DB_USER=root
-DB_PASSWORD=yourpassword
-DB_NAME=railway
-PORT=3001
 ```
 
 Run the server:
@@ -117,49 +103,7 @@ Response:
 
 ---
 
-### Create order
 
-```
-POST /api/orders
-```
-
-Example request:
-
-```
-{
-  "name": "Rithwik",
-  "phone": "9876543210",
-  "address": "Visakhapatnam",
-  "sizes": ["Medium","Large"],
-  "pizzas": ["Margherita","Pepperoni"],
-  "instructions": ["extra cheese",""]
-}
-```
-
----
-
-### Get order
-
-```
-GET /api/orders/:id
-```
-
-Returns order details including pizzas and status.
-
----
-
-### Update order status (Admin)
-
-```
-PUT /api/orders/:id/status
-```
-
-Example request:
-
-```
-{
-  "status": "Preparing"
-}
 ```
 
 Available statuses:
@@ -223,16 +167,6 @@ Frontend
 * Orders automatically receive a short unique ID.
 * The backend uses GORM auto migrations to create tables if they don't exist.
 * The project was designed as a lightweight learning project to explore Go APIs and modern React UI tools.
-
----
-
-## Possible Improvements
-
-* Authentication for admin actions
-* Real-time order updates with WebSockets
-* Order history for customers
-* Payment integration
-* Docker support for easier deployment
 
 ---
 
