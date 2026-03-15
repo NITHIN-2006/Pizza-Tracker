@@ -5,8 +5,7 @@ const api = axios.create({
   headers: {
     'Content-Type': 'application/json',
   },
-});
-
+})
 
 export const getOptions = async () => {
   const { data } = await api.get('/api/options')

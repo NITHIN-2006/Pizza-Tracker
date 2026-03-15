@@ -22,6 +22,11 @@ The backend exposes a REST API that the frontend consumes to create and monitor 
 * Modern React UI with TailwindCSS and shadcn components
 
 ---
+## Screenshots
+![App Screenshot](https://github.com/NITHIN-2006/Pizza-Tracker/blob/5d91068dc61f13d0825328723e3483e9d84137a1/Screenshot%202026-03-06%20162119.png)
+![App Screenshot](https://github.com/NITHIN-2006/Pizza-Tracker/blob/5d91068dc61f13d0825328723e3483e9d84137a1/Screenshot%202026-03-06%20162226.png)
+![App Screenshot](https://github.com/NITHIN-2006/Pizza-Tracker/blob/5d91068dc61f13d0825328723e3483e9d84137a1/Screenshot%202026-03-06%20162256.png)
+---
 
 ## Project Structure
 
@@ -44,9 +49,6 @@ pizza-tracker
 ---
 
 ## Requirements
-
-Make sure the following are installed:
-
 * Go 1.21+
 * Node.js 18+
 * npm
@@ -96,49 +98,7 @@ Response:
 
 ---
 
-### Create order
 
-```
-POST /api/orders
-```
-
-Example request:
-
-```
-{
-  "name": "Rithwik",
-  "phone": "9876543210",
-  "address": "Visakhapatnam",
-  "sizes": ["Medium","Large"],
-  "pizzas": ["Margherita","Pepperoni"],
-  "instructions": ["extra cheese",""]
-}
-```
-
----
-
-### Get order
-
-```
-GET /api/orders/:id
-```
-
-Returns order details including pizzas and status.
-
----
-
-### Update order status (Admin)
-
-```
-PUT /api/orders/:id/status
-```
-
-Example request:
-
-```
-{
-  "status": "Preparing"
-}
 ```
 
 Available statuses:
@@ -202,16 +162,6 @@ Frontend
 * Orders automatically receive a short unique ID.
 * The backend uses GORM auto migrations to create tables if they don't exist.
 * The project was designed as a lightweight learning project to explore Go APIs and modern React UI tools.
-
----
-
-## Possible Improvements
-
-* Authentication for admin actions
-* Real-time order updates with WebSockets
-* Order history for customers
-* Payment integration
-* Docker support for easier deployment
 
 ---
 
