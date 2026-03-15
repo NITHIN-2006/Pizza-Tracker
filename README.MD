@@ -68,27 +68,11 @@ Install dependencies:
 go mod tidy
 ```
 
-Create a `.env` file:
-
-```
-DB_HOST=nozomi.proxy.rlwy.net
-DB_PORT=55939
-DB_USER=root
-DB_PASSWORD=yourpassword
-DB_NAME=railway
-PORT=3001
-```
-
 Run the server:
 
 ```
 go run ./cmd
-```
-
-The backend will start on:
-
-```
-http://localhost:3001
+``
 ```
 
 ---
