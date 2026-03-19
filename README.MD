@@ -24,7 +24,6 @@ The backend exposes a REST API that the frontend consumes to create and monitor 
 ---
 ## Screenshots
 ![App Screenshot](https://github.com/NITHIN-2006/Pizza-Tracker/blob/5d91068dc61f13d0825328723e3483e9d84137a1/Screenshot%202026-03-06%20162119.png)
-![App Screenshot](https://github.com/NITHIN-2006/Pizza-Tracker/blob/5d91068dc61f13d0825328723e3483e9d84137a1/Screenshot%202026-03-06%20162226.png)
 ![App Screenshot](https://github.com/NITHIN-2006/Pizza-Tracker/blob/5d91068dc61f13d0825328723e3483e9d84137a1/Screenshot%202026-03-06%20162256.png)
 ---
 
